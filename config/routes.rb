@@ -7,4 +7,8 @@ Rails.application.routes.draw do
 
     resources :developers, only: [:new, :create]
   end
+
+  namespace :admin do
+    resources :users
+  end
 end
